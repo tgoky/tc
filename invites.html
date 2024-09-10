@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Bot</title>
+</head>
+
+<body>
+    <!-- invite codes -->
+    <!-- invite body -->
+    <div class="invites-body">
+        <!-- invites-container -->
+        <div class="invites-container">
+            <!-- invites-cancel -->
+            <!-- <div class="invites-cancel">
+                <a href="index.html"><i class='bx bxs-left-arrow'></i></a>
+            </div> -->
+            <!-- invites-header -->
+            <div class="invites-header">
+                <img src="images/friend-svgrepo-com.svg" alt="invites-icon">
+                <p>Recruit Soldiers</p>
+            </div>
+            <!-- invites-upgrade -->
+            <div class="invites-upgrade">
+                <button>
+                    <p>Limit-50 Invites</p>
+                    <p>⇾</p>
+                    <p>Upgrade to 100</p>
+                </button>
+
+            </div>
+            <!-- invites-coin amount -->
+            <div class="invites-coin">
+                <div class="coin-amount">
+                    <img src="images/Transparent Ton Catel logo.png" style="height: 25px; width: 25px;">
+                    <p>0</p>
+                </div>
+            </div>
+            <!-- invites-claim btn -->
+            <div class="invite-claim">
+                <button onclick="claim()" id="btn-claim">Claim</button>
+            </div>
+            <!-- invite-notice -->
+            <div class="invites-notice">
+                <p>Earn 500 Gato for each recuit</p>
+                <p>Earn 5% of your soldiers earnings</p>
+                <p>❗Avoid recruiting Bots,GANGWAR is coming❗</p>
+            </div>
+            <!-- invities no. of recurits -->
+            <p id="no-recurit">0 soldiers</p>
+            <!-- invites-box -->
+            <div class="invites-box">
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+                <!-- invites-row -->
+                <div class="invites-row">
+                    <!-- profile image of invite -->
+                    <div class="invite-profile-img">
+                        <img src="images/binance-logo.png" style="width:20px; height:20px">
+                    </div>
+                    <div class="invites-row-box">
+                        <!-- name of the invite -->
+                        <p>recurit name</p>
+                        <p class="invite-amount">2000 Gato</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- invite link -->
+    <div class="invite-link">
+        <button class="btn-invite">Invite a friend!</button>
+    </div>
+    <!-- footer section -->
+    <div class="footer">
+        <div class="footer-box1">
+            <!-- level-footer -->
+            <div class="footer-box">
+                <a href="level.html"><img src="images/profile-image-1349-svgrepo-com.svg"
+                        style="height: 20px; width:20px" alt=""></a>
+                <p><a href="level.html">Profile</a></p>
+            </div>
+            <!-- mission-footer -->
+            <div class="footer-box">
+                <a href="mission.html"><img src="images/task-list-svgrepo-com.svg" style="height: 20px; width:20px;"
+                        alt=""></a>
+                <p><a href="mission.html">Missions</a></p>
+            </div>
+        </div>
+        <!-- home-footer -->
+        <div class="home">
+            <a href="index.html"><img src="images/Transparent Ton Catel logo.png" alt="Ton Catel logo"
+                    style="height: 50px; width:50px; border-radius: 50%; box-shadow: 0 0 50px #ccc; background-color: #ccc; opacity: 0.9;"></a>
+        </div>
+        <!-- invite-footer -->
+        <div class="footer-box1">
+            <div class="footer-box">
+                <a href="invites.html"><img src="images/friend-svgrepo-com.svg" style="height: 20px; width:30px"
+                        alt=""></a>
+                <p><a href="invites.html">Invites</a></p>
+            </div>
+            <!-- update-footer -->
+            <div class="footer-box">
+                <a href="updates.html"><img src="images/screwdriver-wrench-svgrepo-com.svg"
+                        style="height: 20px; width:20px" alt=""></a>
+                <p><a href="updates.html">Update</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Bot</title>
+</head>
+
+<body>
+    <!-- level page -->
+    <div class="level-body">
+        <div class="level-page">
+            <!-- level header -->
+            <div class="level-header">
+                <!-- level title -->
+                <div class="lvl-title">
+                    <div class="lvl-bullet"></div>
+                    <p>Levels</p>
+                    <div class="lvl-bullet"></div>
+                </div>
+                <!-- level cancel -->
+                <!-- <div class="level-cancel">
+                <a href="index.html"><i class='bx bxs-left-arrow'></i></a>
+                </div> -->
+            </div>
+            <!-- level container -->
+            <div class="level-container">
+                <!-- level 1 -->
+                <div class="level-box">
+                    <div class="level-item">
+                        <!-- level image -->
+                        <img src="level img/Lvl1.jpg">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv1-Mew</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">0 Gato</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">1000/4hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- level 2 -->
+                <div class="level-box">
+                    <div class="level-item">
+                        <!-- level image -->
+                        <img src="level img/Lvl2.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv2-Stray Cat</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">20,000 Gato</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">1500/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(2)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- level 3 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 2</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl3.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv3-Worker</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">40,000 Gato</p>
+                            <!-- level speed -->
+                            <p>3000/4hrs</p>
+                            <!-- level uprade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeClr()" id="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level requirement -->
+                            <div class="requirement">
+                                <div class="requirement1">
+                                    <label>Coins</label>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="requirement2">
+                                    <label>2 Recruit</label>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 4 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 3</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl4.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv4-Solider</p>
+                            <!-- level-coin -->
+                            <p class="lvl-coin">60,000 Gato</p>
+                            <!-- level-speed -->
+                            <p>4000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(4)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 5 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 4</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl5.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level-name -->
+                            <p class="lvl-name">Lv5-Associate</p>
+                            <!-- level-coin -->
+                            <p class="lvl-coin">80,000 Gato</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">7000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(5)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level uprade-requirement -->
+                            <div class="requirement">
+                                <div class="requirement1">
+                                    <label>Coins</label>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="requirement2">
+                                    <label>5 Recruit</label>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 6 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 5</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <img src="level img/Lvl6.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv6-Underboss</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">100,000 Gato</p>
+                            <!-- level farming speed  -->
+                            <p class="level-speed">10,000/4hrs</p>
+                            <!-- level upgrade btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(6)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- level 7 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 6</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <img src="level img/Lvl7.jpg">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv7-Boss</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">150,000 Gato</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">13,000/4hrs</p>
+                            <!-- level-upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(7)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level upgrade requirement section -->
+                            <div class="requirement">
+                                <div class="requirement1">
+                                    <label>Coins</label>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="requirement2">
+                                    <label>10 Recruit</label>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 8 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 7</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level img -->
+                        <img src="level img/Lvl8.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <p class="lvl-name">Lv8-Cato</p>
+                            <p class="lvl-coin">200,000 Gato</p>
+                            <p class="level-speed">15,000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(8)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 9 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked 8</h2>
+                            <p>Pass level</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl9.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv9-Don</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">400,000 Gato</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">17,000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(9)" id]class="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level requirement -->
+                            <div class="requirement">
+                                <div class="requirement1">
+                                    <label>Coins</label>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="requirement2">
+                                    <label>15 Recruit</label>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- level 10 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 9</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl10.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv10-Lord</p>
+                            <!-- level coin -->
+                            <p class="lvl-coin">500,000 Gato</p>
+                            <p>GP</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">19,000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(10)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- level 11 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 10</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl11.jpg" width="20px, height: 30px">
+                        <!-- level-box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level-name -->
+                            <p class="lvl-name">Lv11-Godfather</p>
+                            <p>GP(BYpass avaiable)</p>
+                            <!-- level farming speed -->
+                            <p class="level-speed">20,000/4hrs</p>
+                            <!-- level upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeLevel(11)" class="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- level 12 -->
+                <div class="level-box">
+                    <!-- locked -->
+                    <div class="level-cover">
+                        <img src="images/lock-svgrepo-com.svg" alt="lock level">
+                        <div class="lvlbox-info">
+                            <h2>Locked</h2>
+                            <p>Pass level 11</p>
+                            <p>to unlock</p>
+                        </div>
+                    </div>
+                    <!-- level content -->
+                    <div class="level-item locked">
+                        <!-- level image -->
+                        <img src="level img/Lvl12.jpg" width="20px, height: 30px">
+                        <!-- level box-text -->
+                        <div class="lvlbox-text">
+                            <!-- level name -->
+                            <p class="lvl-name">Lv12-Gato</p>
+                            <p>GP</p>
+                            <p>Telegram Stars</p>
+                            <!-- level-upgrade-btn -->
+                            <div class="upgrade-btn">
+                                <button onclick="upgradeClr()" id="upgrade-btn">Upgrade</button>
+                            </div>
+                            <!-- level bypass-btn -->
+                            <div class="Bypass-btn">
+                                <button onclick="changeClr()" id="bypass-btn">ByPass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <div class="footer">
+        <div class="footer-box1">
+            <!-- level-footer -->
+            <div class="footer-box">
+                <a href="level.html"><img src="images/profile-image-1349-svgrepo-com.svg"
+                        style="height: 20px; width:20px" alt=""></a>
+                <p><a href="level.html">Profile</a></p>
+            </div>
+            <!-- mission-footer -->
+            <div class="footer-box">
+                <a href="mission.html"><img src="images/task-list-svgrepo-com.svg" style="height: 20px; width:20px;"
+                        alt=""></a>
+                <p><a href="mission.html">Missions</a></p>
+            </div>
+        </div>
+        <!-- home-footer -->
+        <div class="home">
+            <a href="index.html"><img src="images/Transparent Ton Catel logo.png" alt="Ton Catel logo"
+                    style="height: 50px; width:50px; border-radius: 50%; box-shadow: 0 0 50px #ccc; background-color: #ccc; opacity: 0.9;"></a>
+        </div>
+        <!-- invite-footer -->
+        <div class="footer-box1">
+            <div class="footer-box">
+                <a href="invites.html"><img src="images/friend-svgrepo-com.svg" style="height: 20px; width:30px"
+                        alt=""></a>
+                <p><a href="invites.html">Invites</a></p>
+            </div>
+            <!-- update-footer -->
+            <div class="footer-box">
+                <a href="updates.html"><img src="images/screwdriver-wrench-svgrepo-com.svg"
+                        style="height: 20px; width:20px" alt=""></a>
+                <p><a href="updates.html">Update</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

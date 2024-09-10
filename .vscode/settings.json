@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.port": 5502,
+    "emulator.androidColdBoot": true,
+    "emulator.androidExtraBootArgs": "",
+    "emulator.emulatorPathWindows": "C:\\Users\\USER.DESKTOP-JNIPBQL\\AppData\\Local\\Android\\Sdk\\emulator"
+}
