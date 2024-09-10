@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://twa-sdk.dev/twa-sdk.min.js"></script>
     <title>Bot</title>
+  
 </head>
 
 <body>
-    <!--loading page section -->
+    <!-- loading page section -->
     <div class="preloader" id="preloader">
         <div class="preloader-container">
-            <!-- loading page animination -->
+            <!-- loading page animation -->
             <div class="loading"></div>
             <p class="LT">Loading</p>
         </div>
@@ -25,7 +27,7 @@
                 <!-- loading page text -->
                 <div class="load-text">
                     <p class="LT1">Ton Catel</p>
-                    <p class="LT2 ">will be launched</p>
+                    <p class="LT2">will be launched</p>
                 </div>
                 <p class="LT3">on TON</p>
                 <p class="icon-text">Keep in Touch:</p>
@@ -44,14 +46,13 @@
             </div>
         </div>
     </div>
-    <!-- homepage section-->
+    <!-- homepage section -->
     <div class="home-container">
         <div class="container">
             <!-- homepage header -->
             <div class="header">
                 <div class="img-icon">
-                    <img class="img-icon1" src="images/Transparent Ton Catel logo.png" alt="Mew img-icon"
-                        style="width: 40px; height: 40px;">
+                    <img class="img-icon1" src="images/Transparent Ton Catel logo.png" alt="Mew img-icon" style="width: 40px; height: 40px;">
                     <p class="title-name">Ton Catel</p>
                 </div>
                 <div class="setting">
@@ -71,9 +72,6 @@
                 <!-- homepage progress bar -->
                 <label for="progress-bar"></label>
                 <progress id="progress-bar" max="100" value="50"></progress>
-                <!-- <div class="progress-gradient">
-                    <div class="gradient-bar"></div>
-                </div> -->
             </div>
             <!-- homepage bonus box -->
             <div class="box-award">
@@ -89,15 +87,13 @@
                 <div class="box">
                     <div class="bullet"></div>
                     <div class="box-icon">
-                        <img src="images/gold-coin-leprechaun-money-gold-pot-374cc050e2deeac87ef03fa64241b726.png"
-                            style="width: 35px; height: 35px;" alt="Bonus">
+                        <img src="images/gold-coin-leprechaun-money-gold-pot-374cc050e2deeac87ef03fa64241b726.png" style="width: 35px; height: 35px;" alt="Bonus">
                     </div>
                     <p class="daily-title"><a href="bonuses.html">Bonuses</a></p>
                 </div>
                 <!-- Daily meme box -->
                 <div class="box">
                     <div class="bullet"></div>
-
                     <div class="box-icon">
                         <img src="images/pngegg (6).png" style="width: 35px; height: 35px;" alt="Daily Meme">
                     </div>
@@ -105,7 +101,6 @@
                     <div class="come">
                         <p>coming soon</p>
                     </div>
-
                 </div>
             </div>
             <!-- main-box -->
@@ -125,19 +120,16 @@
                 <div class="farming-btn">
                     <button id="farmingBtn" class="start-farming-btn" onclick="startFarming()">
                         <div class="farm-box">
-                            <div class="farming-box"> <span id="farmingText">Start Farming</span>
-                                <img id="farmingImg" src="images/Transparent Ton Catel logo.png"
-                                    style="height: 20px; width: 20px;">
+                            <div class="farming-box">
+                                <span id="farmingText">Start Farming</span>
+                                <img id="farmingImg" src="images/Transparent Ton Catel logo.png" style="height: 20px; width: 20px;">
                                 <span class="farming-amount" id="amount">0</span>
                             </div>
                             <div class="farming-box">
                                 <span class="timer" id="timer">04:00:00</span>
-                                <div id="level-speed">
-                                    ⚡x1500/4hrs
-                                </div>
+                                <div id="level-speed">⚡x1500/4hrs</div>
                             </div>
                         </div>
-
                     </button>
                 </div>
             </div>
@@ -147,39 +139,89 @@
             <div class="footer-box1">
                 <!-- level-footer -->
                 <div class="footer-box">
-                    <a href="level.html"><img src="images/profile-image-1349-svgrepo-com.svg"
-                            style="height: 20px; width:20px" alt=""></a>
+                    <a href="level.html"><img src="images/profile-image-1349-svgrepo-com.svg" style="height: 20px; width:20px" alt=""></a>
                     <p><a href="level.html">Profile</a></p>
                 </div>
                 <!-- mission-footer -->
                 <div class="footer-box">
-                    <a href="mission.html"><img src="images/task-list-svgrepo-com.svg" style="height: 20px; width:20px;"
-                            alt=""></a>
+                    <a href="mission.html"><img src="images/task-list-svgrepo-com.svg" style="height: 20px; width:20px;" alt=""></a>
                     <p><a href="mission.html">Missions</a></p>
                 </div>
             </div>
             <!-- home-footer -->
             <div class="home">
-                <a href="index.html"><img src="images/Transparent Ton Catel logo.png" alt="Ton Catel logo"
-                        style="height: 50px; width:50px; border-radius: 50%; box-shadow: 0 0 50px #ccc; background-color: #ccc; opacity: 0.9;"></a>
+                <a href="index.html"><img src="images/Transparent Ton Catel logo.png" alt="Ton Catel logo" style="height: 50px; width:50px; border-radius: 50%; box-shadow: 0 0 50px #ccc; background-color: #ccc; opacity: 0.9;"></a>
             </div>
             <!-- invite-footer -->
             <div class="footer-box1">
                 <div class="footer-box">
-                    <a href="invites.html"><img src="images/friend-svgrepo-com.svg" style="height: 20px; width:30px"
-                            alt=""></a>
+                    <a href="invites.html"><img src="images/friend-svgrepo-com.svg" style="height: 20px; width:30px" alt=""></a>
                     <p><a href="invites.html">Invites</a></p>
                 </div>
                 <!-- update-footer -->
                 <div class="footer-box">
-                    <a href="updates.html"><img src="images/screwdriver-wrench-svgrepo-com.svg"
-                            style="height: 20px; width:20px" alt=""></a>
+                    <a href="updates.html"><img src="images/screwdriver-wrench-svgrepo-com.svg" style="height: 20px; width:20px" alt=""></a>
                     <p><a href="updates.html">Update</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- javascript -->
+
+    <!-- JavaScript -->
+    <script>
+        // Hide preloader and show home container on page load
+        window.addEventListener('load', function () {
+            document.getElementById('preloader').style.display = 'none';
+            document.querySelector('.home-container').style.display = 'block';
+            document.querySelector('.home-container').style.opacity = '1';
+        });
+
+        let farmingAmount = 0;
+        let hours = 4;
+        let minutes = 0;
+        let seconds = 0;
+        let farmingTimer, countdownTimer;
+
+        function startFarming() {
+            // Trigger haptic feedback
+            if (navigator.vibrate) {
+                navigator.vibrate(100); // Vibrate for 100ms
+            }
+
+            // Increment farming amount and update the display
+            farmingAmount += 1;
+            document.getElementById('amount').innerText = farmingAmount;
+
+            // Save progress using Telegram Web App SDK
+            if (window.TelegramWebApp) {
+                window.TelegramWebApp.sendData(`Farming started. Amount: ${farmingAmount}`);
+            }
+
+            // Start countdown timer
+            startCountdown();
+        }
+
+        function startCountdown() {
+            let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+            function updateTimer() {
+                let hoursLeft = Math.floor(totalSeconds / 3600);
+                let minutesLeft = Math.floor((totalSeconds % 3600) / 60);
+                let secondsLeft = totalSeconds % 60;
+
+                document.getElementById('timer').innerText =
+                    `${String(hoursLeft).padStart(2, '0')}:${String(minutesLeft).padStart(2, '0')}:${String(secondsLeft).padStart(2, '0')}`;
+
+                if (totalSeconds <= 0) {
+                    clearInterval(countdownTimer);
+                } else {
+                    totalSeconds -= 1;
+                }
+            }
+
+            countdownTimer = setInterval(updateTimer, 1000);
+        }
+    </script>
     <script defer src="script.js"></script>
 </body>
 
