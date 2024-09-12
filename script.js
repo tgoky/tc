@@ -1,3 +1,42 @@
+// Function to trigger haptic feedback using Telegram Web App SDK
+function triggerHapticFeedback(style) {
+    const hapticFeedback = window.Telegram.WebApp.HapticFeedback;
+
+    if (hapticFeedback) {
+        switch(style) {
+            case 'light':
+                hapticFeedback.impactOccurred('light');
+                break;
+            case 'medium':
+                hapticFeedback.impactOccurred('medium');
+                break;
+            case 'heavy':
+                hapticFeedback.impactOccurred('heavy');
+                break;
+            case 'rigid':
+                hapticFeedback.impactOccurred('rigid');
+                break;
+            case 'soft':
+                hapticFeedback.impactOccurred('soft');
+                break;
+            case 'error':
+                hapticFeedback.notificationOccurred('error');
+                break;
+            case 'success':
+                hapticFeedback.notificationOccurred('success');
+                break;
+            case 'warning':
+                hapticFeedback.notificationOccurred('warning');
+                break;
+            default:
+                console.log('Invalid haptic feedback style or type');
+                break;
+        }
+    } else {
+        console.log('HapticFeedback is not available');
+    }
+}
+
 // Preloader script
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
@@ -5,14 +44,6 @@ window.addEventListener("load", function () {
     document.querySelector(".home-container").style.display = "block";
     document.querySelector(".home-container").style.opacity = "1";
 });
-
-// Function to trigger haptic feedback
-function triggerHapticFeedback() {
-    if ("vibrate" in navigator) {
-        // Vibration pattern: 200ms vibration, 100ms pause, 200ms vibration
-        navigator.vibrate([200, 100, 200]);
-    }
-}
 
 // Farming button variables
 let farmingAmount = 0;
@@ -23,7 +54,7 @@ let farmingTimer, countdownTimer;
 
 // Function to start farming
 function startFarming() {
-    triggerHapticFeedback(); // Trigger haptic feedback
+    triggerHapticFeedback('light'); // Trigger haptic feedback
     
     document.querySelector("#farmingBtn").disabled = true; // Disable the button
 
@@ -55,6 +86,7 @@ function startCountdown() {
             document.querySelector("#farmingBtn").disabled = false; // Enable the button after farming ends
             document.getElementById("farmingBtn").textContent = "Claim";
             document.querySelector(".timer").style.display = "none";
+            triggerHapticFeedback('success'); // Trigger haptic feedback for success
         } else {
             if (seconds > 0) {
                 seconds--;
@@ -124,4 +156,3 @@ function completeTask() {
 
 // Initialize Telegram Web App
 window.Telegram.WebApp.ready();
-
