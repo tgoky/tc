@@ -121,3 +121,7 @@ function completeTask() {
     currentTaskElement.classList.add('completed');
     closeModal(); // Close the modal
 }
+
+// Initialize Telegram Web App
+window.Telegram.WebApp.ready();
+
