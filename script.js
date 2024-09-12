@@ -156,3 +156,13 @@ function completeTask() {
 
 // Initialize Telegram Web App
 window.Telegram.WebApp.ready();
+
+// Add event listeners for footer buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const footerButtons = document.querySelectorAll('.footer-box a');
+    footerButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            triggerHapticFeedback('light'); // Trigger haptic feedback on button click
+        });
+    });
+});
